@@ -1,0 +1,112 @@
+﻿@using MVC_Movie.Models;
+@model IEnumerable<MVC_Movie.Models.UserAccount>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Last Name")
+        </th>
+        <th>
+            @Html.DisplayName("First Name")
+        </th>
+        <th>
+            @Html.DisplayName("Email")
+        </th>
+        <th>
+            @Html.DisplayName("Street")
+        </th>
+        <th>
+            @Html.DisplayName("City")
+        </th>
+        <th>
+            @Html.DisplayName("State")
+        </th>
+        <th>
+            @Html.DisplayName("Zip")
+        </th>
+        <th>
+            @Html.DisplayName("Address Type")
+        </th>
+        <th>
+            @Html.DisplayName("Number")
+        </th>
+        <th>
+            @Html.DisplayName("Phone Type")
+        </th>
+        <th>
+            @Html.DisplayName("Title")
+        </th>
+        <th>
+            @Html.DisplayName("Release Date")
+        </th>
+        <th>
+            @Html.DisplayName("Genre")
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.lastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.firstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.street)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.city)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.state)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.zip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.addressType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phoneType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.releaseDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.genre)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id, lastName = item.lastName, firstName = item.firstName, email = item.email, 
+                street = item.street, city = item.city, state = item.state, zip = item.zip, addressType = item.addressType, 
+                number = item.number, phoneType = item.phoneType, title = item.title, releaseDate = item.releaseDate, genre = item.genre }) |
+            @Html.ActionLink("Details", "Details", new { id = item.id, lastName = item.lastName, firstName = item.firstName, email = item.email,
+                street = item.street, city = item.city, state = item.state, zip = item.zip, addressType = item.addressType, 
+                number = item.number, phoneType = item.phoneType, title = item.title, releaseDate = item.releaseDate, genre = item.genre }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.id, lastName = item.lastName, firstName = item.firstName, email = item.email,
+                street = item.street, city = item.city, state = item.state, zip = item.zip, addressType = item.addressType, 
+                number = item.number, phoneType = item.phoneType, title = item.title, releaseDate = item.releaseDate, genre = item.genre })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,7 @@
+c:\users\onshorebc3\documents\visual studio 2013\Projects\MVC_Movie\BLL\bin\Debug\BLL.dll
+c:\users\onshorebc3\documents\visual studio 2013\Projects\MVC_Movie\BLL\bin\Debug\BLL.pdb
+c:\users\onshorebc3\documents\visual studio 2013\Projects\MVC_Movie\BLL\bin\Debug\DAL.dll
+c:\users\onshorebc3\documents\visual studio 2013\Projects\MVC_Movie\BLL\bin\Debug\DAL.pdb
+c:\users\onshorebc3\documents\visual studio 2013\Projects\MVC_Movie\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+c:\users\onshorebc3\documents\visual studio 2013\Projects\MVC_Movie\BLL\obj\Debug\BLL.dll
+c:\users\onshorebc3\documents\visual studio 2013\Projects\MVC_Movie\BLL\obj\Debug\BLL.pdb

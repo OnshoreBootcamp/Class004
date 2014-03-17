@@ -1,0 +1,49 @@
+﻿@using MVC_Movie.Models;
+@model IEnumerable<MVCMovie.Models.Movie>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Title")
+        </th>
+        <th>
+            @Html.DisplayName("Release Date")
+        </th>
+        <th>
+            @Html.DisplayName("Genre")
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.releaseDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.genre)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.id, title = item.title,
+                releaseDate = item.releaseDate, genre = item.genre }) |
+            @Html.ActionLink("Details", "Details", new { id = item.id, title = item.title,
+                releaseDate = item.releaseDate, genre = item.genre }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.id, title = item.title,
+                releaseDate = item.releaseDate, genre = item.genre })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,5 @@
+c:\users\onshorebc3\documents\visual studio 2013\Projects\MVC_Movie\DAL\bin\Debug\DAL.dll
+c:\users\onshorebc3\documents\visual studio 2013\Projects\MVC_Movie\DAL\bin\Debug\DAL.pdb
+c:\users\onshorebc3\documents\visual studio 2013\Projects\MVC_Movie\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+c:\users\onshorebc3\documents\visual studio 2013\Projects\MVC_Movie\DAL\obj\Debug\DAL.dll
+c:\users\onshorebc3\documents\visual studio 2013\Projects\MVC_Movie\DAL\obj\Debug\DAL.pdb
